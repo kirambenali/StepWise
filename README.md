@@ -2,6 +2,18 @@
 
 **StepWise** est une application éducative innovante destinée aux enfants atteints de trisomie 21, conçue pour favoriser leur **autonomie**, leur **intégration sociale** et leur **préparation professionnelle** à travers une expérience assistée par intelligence artificielle.
 
+> ⚠️ **Remarque** : Le code source de Chic Circle est privé. Ce fichier README.md fournit un aperçu du projet et de ses fonctionnalités.
+
+---
+
+## 📚 Table des matières
+
+- [🎯 Objectif](#-objectif)
+- [🧠 Fonctionnalités Clés](#-fonctionnalités-clés)
+- [🧠 Intelligence Artificielle (IA)](#-intelligence-artificielle-ia)
+- [🛠️ Stack Technique](#️-stack-technique)
+- [🎯 Cas d’usage typique](#-cas-dusage-typique)
+
 ---
 
 ## 🎯 Objectif
@@ -25,12 +37,13 @@ Permettre aux enfants trisomiques d’acquérir des compétences essentielles po
 
 ## 🧠 Intelligence Artificielle (IA)
 
+L’élément différenciateur majeur de **StepWise** est son **agent IA temps réel**
+
 ### 🧾 Agent AI en temps réel :
-- **Reconnaissance vocale et phonétique** via le modèle **Wav2Vec2** pour analyser la prononciation.
-- **Analyse d’images** via caméra pour valider les routines (faire le lit, s’habiller, brosser les dents…).
+- Intégration avec **WebRTC** via LiveKit pour capturer et traiter la voix en continu.
+- Traitement d’image en live à partir du flux caméra.
 - **Détection de respiration** et validation des exercices de relaxation.
 - **Génération audio** via **Speechify** (Text-to-Speech) pour une interaction vocale naturelle.
-- **Recommandations de repas** via un module AI santé basé sur des données diététiques adaptées.
 
 ---
 
@@ -52,24 +65,23 @@ Permettre aux enfants trisomiques d’acquérir des compétences essentielles po
 - **Wav2Vec2** : Analyse vocale et phonétique via Deep Learning.
 - **Speechify** : Conversion texte → voix pour accompagner l'enfant.
 - **Gemini AI** : Agent intelligent pour valider, assister et déclencher les tâches.
-- **TensorFlow / PyTorch** : Utilisés pour l'entraînement de modèles personnalisés (facultatif).
+- **TensorFlow / PyTorch** : Utilisés pour l'entraînement de modèles personnalisés.
 
 ---
 
-## 🧩 Architecture Générale
+## 🎯 Cas d’usage typique
 
-```text
-[Flutter App]
-     |
-     | WebSocket (live notifications, data push)
-     v
-[NestJS Backend] <---> [MongoDB / PostgreSQL]
-     |
-     | REST + WebSocket + AI Agent Communication
-     v
-[Gemini AI & Deep Learning Models]
-     |
-     | Text-to-Speech (Speechify) / Speech-to-Embedding (Wav2Vec2)
-     v
-[LiveKit] --> [Camera/Mic Stream Analysis in Real-Time]
-
+- 🛌 L’enfant se réveille et ouvre l’application StepWise  
+- 🔔 L’app lance la routine du matin :  
+  - 🛏️ Faire le lit  
+  - 🪥 Se brosser les dents  
+  - 🌬️ Exercices de respiration  
+  - 👕 S’habiller correctement  
+- 🤖 Chaque étape est validée en temps réel via la caméra et le micro par l’agent AI Gemini  
+- 📚 Après la routine, l’enfant accède aux activités éducatives :  
+  - 🔤 Spelling avec retour vocal intelligent  
+  - 🧠 Mathématiques, physique, logique  
+- 🧁 L’enfant termine la journée par des tâches ludiques :  
+  - 🥣 Atelier cuisine  
+  - 🤸 Sport doux adapté  
+- 🏅 À chaque tâche validée, l’enfant gagne un badge et progresse de niveau
