@@ -2,7 +2,7 @@
 
 **StepWise** est une application éducative innovante destinée aux enfants atteints de trisomie 21, conçue pour favoriser leur **autonomie**, leur **intégration sociale** et leur **préparation professionnelle** à travers une expérience assistée par intelligence artificielle.
 
-> ⚠️ **Remarque** : Le code source de Chic Circle est privé. Ce fichier README.md fournit un aperçu du projet et de ses fonctionnalités.
+> ⚠️ **Remarque** : Le code source  est privé. Ce fichier README.md fournit un aperçu du projet et de ses fonctionnalités.
 
 ---
 
