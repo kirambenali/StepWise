@@ -85,3 +85,6 @@ L’élément différenciateur majeur de **StepWise** est son **agent IA temps r
   - 🥣 Atelier cuisine  
   - 🤸 Sport doux adapté  
 - 🏅 À chaque tâche validée, l’enfant gagne un badge et progresse de niveau
+  
+  ---
+![Aperçu de StepWise](StepWise.jpg)
